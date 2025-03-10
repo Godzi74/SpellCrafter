@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &764043202855607037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7492349037916479377}
+  - component: {fileID: 2587932037479980424}
+  - component: {fileID: 3659828873548148711}
+  - component: {fileID: 4099754720843005755}
+  - component: {fileID: 1922543444478446262}
+  - component: {fileID: 3682505757751060486}
+  m_Layer: 0
+  m_Name: Battle System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7492349037916479377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764043202855607037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2587932037479980424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764043202855607037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3ddbe95e634a246ac31644612cce3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 0
+  playerGO: {fileID: 1751312741643775650, guid: 8def22ef2d3ca514d93ed282e846cbc5,
+    type: 3}
+  enemyGO1: {fileID: 0}
+  enemyGO2: {fileID: 0}
+  enemyGO3: {fileID: 0}
+  killCount: 0
+  wave: 1
+  enemiesOnField: []
+  enemyBattleStation1: {fileID: 0}
+  enemyBattleStation2: {fileID: 0}
+  enemyBattleStation3: {fileID: 0}
+  playerBattleStation: {fileID: 1477048404755052234, guid: 8def22ef2d3ca514d93ed282e846cbc5,
+    type: 3}
+  dialogue: {fileID: 0}
+  getWave: {fileID: 3682505757751060486}
+  getBattleUI: {fileID: 0}
+  turnOnCraftButton: {fileID: 0}
+  getTable: {fileID: 0}
+--- !u!114 &3659828873548148711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764043202855607037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab4ede4f4f901d45986c08611c4df83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellTable: {fileID: 0}
+  battleCanvas: {fileID: 0}
+  craftCanvas: {fileID: 0}
+--- !u!114 &4099754720843005755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764043202855607037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb777c9fc1d662248a444f97f16b0bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialSpawnLocation: {fileID: 5009731524927038204, guid: 02c877480ed12e3488c5d028fa3b6db5,
+    type: 3}
+  Fire: {fileID: 4833818990902749939, guid: 67d12444dc035724c8e47d9db9018157, type: 3}
+  Water: {fileID: 986565528201718250, guid: a81523e981d1f6e4f825b2441fb461a2, type: 3}
+  Ice: {fileID: 1055257163980115954, guid: 9f631985d73693241b3c83cd7175105c, type: 3}
+  Earth: {fileID: 2479375592014214946, guid: c79cf358ab628cf41b5e793f6e38fe63, type: 3}
+  Thunder: {fileID: 1830674727600303143, guid: cebb483cf23381746bbfc249eea53bc4, type: 3}
+  Attack: {fileID: 3031378890828910901, guid: 07d46c6ae3b3add4ba48dea307771299, type: 3}
+  AoE: {fileID: 6049954327659808380, guid: 09a4540797d46d14e9c1549afa1289dd, type: 3}
+  Blessing: {fileID: 514967866063167926, guid: 6abe9b9b00ca71048bdf1807452e4b23, type: 3}
+--- !u!114 &1922543444478446262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764043202855607037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd159957a8c9cb48847d66f5445421a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHP: 0
+  spellType: 
+  Element1: 
+  Element2: 
+  spellDamage: 0
+  spellUses: 0
+  spellValue: 0
+--- !u!114 &3682505757751060486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764043202855607037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242d8e2ab024bac40b478f3a82d05f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wave1:
+  - {fileID: 649390684978688337, guid: e0cc11b207d735643820af7fcc0b0264, type: 3}
+  - {fileID: 649390684978688337, guid: e0cc11b207d735643820af7fcc0b0264, type: 3}
+  - {fileID: 649390684978688337, guid: e0cc11b207d735643820af7fcc0b0264, type: 3}
+  - {fileID: 649390684978688337, guid: e0cc11b207d735643820af7fcc0b0264, type: 3}
+  - {fileID: 649390684978688337, guid: e0cc11b207d735643820af7fcc0b0264, type: 3}
+  Wave2:
+  - {fileID: 4682370375792356166, guid: b1ad450f3d4a5f549acf300455853cda, type: 3}
+  - {fileID: 4682370375792356166, guid: b1ad450f3d4a5f549acf300455853cda, type: 3}
+  - {fileID: 4682370375792356166, guid: b1ad450f3d4a5f549acf300455853cda, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  Wave3:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
